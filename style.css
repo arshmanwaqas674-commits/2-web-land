@@ -1,0 +1,137 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styling */
+.nav-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    justify-content: space-around;
+    
+  }
+
+.nav-links a {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    
+}
+
+.nav-btn {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: auto; /* Button ko right side pe bejny k liye */
+}
+
+/* Hero Section Styling */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #ffffff;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.hero p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.hero-btn {
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* === BOXES / GRID STYLING === */
+.feature-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    flex-wrap: wrap; /* Mobile screen par boxes khud ba khud niche aa jayenge */
+    max-width: 1200px;
+}
+
+/* Yeh aapka main BOX hai */
+.feature-box {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0; /* Box ki border */
+    border-radius: 8px;        /* Corners ko round karne ke liye */
+    padding: 25px;             /* Box ke andar space ke liye */
+    width: 260px;              /* Har box ki width */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Soft shadow effect */
+    transition: transform 0.3s ease;
+    flex-direction: column;
+}
+
+/* Box par hover karne se thoda upar uthega */
+.feature-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.feature-box h3 {
+    text-transform: capitalize;
+    font-size: 1.25rem;
+    color: #111;
+    margin-bottom: 12px;
+}
+
+.feature-box p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+}
+/* Mobile Screens ke liye responsiveness (Max width 768px) */
+@media screen (max-width:1024px) {
+    
+}
+@media (max-width: 768px){
+
+}
+@media screen (max-width:425px;) {
+    
+}
+@media screen (max-width:375px;) {
+    
+}
+    .feature-container {
+        flex-direction: column; /* Mobile par boxes ek ke niche ek aane lagenge */
+        align-items: center;    /* Boxes center mein ho jayenge */
+    }
+
+    .feature-box {
+        width: 100%;           /* Mobile par box poori width le lega */
+        max-width: 320px;      /* Lekin bohot zyada bada bhi nahi hoga */
+    }
+
+    
+
+    .nav-btn {
+        margin-left: 0;        /* Button center mein aa jayega */
+        width: 100%;
+    }
